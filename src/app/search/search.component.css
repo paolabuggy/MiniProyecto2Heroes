@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+h2{
+    font-family: 'Anton';
+}
+
+.contenedor{
+    background-image: url("../../assets/img/backBusqueda.jpg");
+    height: 500px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; /* The image used */
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    margin-bottom: 80px;
+}
+
+#msjImagen{
+    flex: 0 1 auto;
+}
+
+
+#msjBusqueda {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(24, 23, 23, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    width: 60%;
+
+    flex: 3 1 auto;
+}
+
+@media screen and (max-width: 990px) {
+    #msjImagen > img{
+      height: 200px;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+
+    #msjBusqueda > h2{
+        font-size: 18px;
+    }
+
+    #msjBusqueda {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        flex: 0 0 auto;
+        align-self: stretch;
+    }
+
+    #msjImagen{
+        margin: 5px;
+        flex: 0 0 auto;
+    }
+
+} 
+
+@media screen and (max-width: 550px) {
+    #msjBusqueda > h2{
+        font-size: 15px;
+    }
+}

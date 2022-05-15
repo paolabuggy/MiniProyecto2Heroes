@@ -1,0 +1,23 @@
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+p{
+    text-align: justify;
+}
+
+@media(max-width: 991.98px){
+    iframe{
+        width: 400px;
+        height: 200px;
+    }
+
+    p{
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}

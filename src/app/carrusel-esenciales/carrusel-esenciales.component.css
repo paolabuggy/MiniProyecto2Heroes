@@ -1,0 +1,21 @@
+p{
+    text-align: justify;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
+
+img{
+    height: 800px;
+    width: 500px;
+}
+.carrusel{
+    height: 800px;
+    width: 500px;
+}

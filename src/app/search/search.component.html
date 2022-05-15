@@ -1,0 +1,11 @@
+<div class="contenedor rounded" *ngIf="indice==-1">
+    <div id="msjImagen">
+        <img src="assets/img/busqueda.png" alt="" height="350px">
+    </div>
+    <div id="msjBusqueda" class="rounded">
+        <h2>Lo sentimos, nuestros héroes no encontraron a "{{nombreh}}" en los multiversos de nuestra página.</h2>
+    </div>
+    {{tiempoEspera()}}
+</div> 
+
+<app-unheroe *ngIf="indice!=-1" [heroe]='miheroe'></app-unheroe>
